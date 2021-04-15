@@ -74,7 +74,7 @@ class Admin extends React.Component {
         <div className="main-content" ref="mainContent">
           <AdminNavbar
             {...this.props}
-            brandText={this.getBrandText(this.props.location.pathname)}
+            brandText="Mon Espace Client"
           />
           <Switch>
             {this.getRoutes(routes)}

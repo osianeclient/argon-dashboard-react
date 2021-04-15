@@ -28,14 +28,14 @@ class Footer extends React.Component {
         <Row className="align-items-center justify-content-xl-between">
           <Col xl="6">
             <div className="copyright text-center text-xl-left text-muted">
-              © 2018{" "}
+              © 2021{" "}
               <a
                 className="font-weight-bold ml-1"
-                href="https://www.creative-tim.com?ref=adr-admin-footer"
+                href="e2c.cg"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Creative Tim
+                E2C
               </a>
             </div>
           </Col>

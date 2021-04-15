@@ -137,7 +137,7 @@ class Sidebar extends React.Component {
           ) : null}
           {/* User */}
           <Nav className="align-items-center d-md-none">
-            <UncontrolledDropdown nav>
+            {/*<UncontrolledDropdown nav>
               <DropdownToggle nav className="nav-link-icon">
                 <i className="ni ni-bell-55" />
               </DropdownToggle>
@@ -151,7 +151,7 @@ class Sidebar extends React.Component {
                 <DropdownItem divider />
                 <DropdownItem>Something else here</DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown>*/}
             <UncontrolledDropdown nav>
               <DropdownToggle nav>
                 <Media className="align-items-center">
@@ -164,7 +164,7 @@ class Sidebar extends React.Component {
                 </Media>
               </DropdownToggle>
               <DropdownMenu className="dropdown-menu-arrow" right>
-                <DropdownItem className="noti-title" header tag="div">
+                {/*<DropdownItem className="noti-title" header tag="div">
                   <h6 className="text-overflow m-0">Welcome!</h6>
                 </DropdownItem>
                 <DropdownItem to="/admin/user-profile" tag={Link}>
@@ -183,7 +183,7 @@ class Sidebar extends React.Component {
                   <i className="ni ni-support-16" />
                   <span>Support</span>
                 </DropdownItem>
-                <DropdownItem divider />
+          <DropdownItem divider />*/}
                 <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
@@ -222,7 +222,7 @@ class Sidebar extends React.Component {
               </Row>
             </div>
             {/* Form */}
-            <Form className="mt-4 mb-3 d-md-none">
+            {/*<Form className="mt-4 mb-3 d-md-none">
               <InputGroup className="input-group-rounded input-group-merge">
                 <Input
                   aria-label="Search"
@@ -236,11 +236,11 @@ class Sidebar extends React.Component {
                   </InputGroupText>
                 </InputGroupAddon>
               </InputGroup>
-            </Form>
+            </Form>*/}
             {/* Navigation */}
             <Nav navbar>{this.createLinks(routes)}</Nav>
             {/* Divider */}
-            <hr className="my-3" />
+            {<hr className="my-3" />}
             {/* Heading */}
             <h6 className="navbar-heading text-muted">Documentation</h6>
             {/* Navigation */}

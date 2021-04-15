@@ -19,13 +19,16 @@ import React from "react";
 
 // reactstrap components
 import {
-  Button,
+  //Button,
   Card,
-  CardHeader,
+  //CardHeader,
   CardBody,
-  FormGroup,
-  Form,
-  Input,
+  ListGroupItem,
+  ListGroup,
+  Badge,
+  //FormGroup,
+  //Form,
+  //Input,
   Container,
   Row,
   Col
@@ -43,7 +46,7 @@ class Profile extends React.Component {
           <Row>
             <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
               <Card className="card-profile shadow">
-                <Row className="justify-content-center">
+                {/*<Row className="justify-content-center">
                   <Col className="order-lg-2" lg="3">
                     <div className="card-profile-image">
                       <a href="#pablo" onClick={e => e.preventDefault()}>
@@ -55,31 +58,37 @@ class Profile extends React.Component {
                       </a>
                     </div>
                   </Col>
-                </Row>
-                <CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                </Row>*/}
+                {/*<CardHeader className="text-center border-0 pb-0 pb-md-4">
                   <div className="d-flex justify-content-between">
-                    <Button
-                      className="mr-4"
-                      color="info"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      Connect
-                    </Button>
-                    <Button
-                      className="float-right"
-                      color="default"
-                      href="#pablo"
-                      onClick={e => e.preventDefault()}
-                      size="sm"
-                    >
-                      Message
-                    </Button>
+                    <div>
+                        <Button
+                            className="float-left"
+                            color="info"
+                            href="#pablo"
+                            onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            Connect
+                        </Button>
+                        <div className="text-center">Friends</div>
+                    </div>
+                    <div>
+                        <Button
+                            className="float-right"
+                            color="default"
+                            href="#pablo"
+                            onClick={e => e.preventDefault()}
+                            size="sm"
+                        >
+                            Message
+                        </Button>
+                        <div className="text-center">Friends</div>
+                    </div>
                   </div>
-                </CardHeader>
-                <CardBody className="pt-0 pt-md-4">
-                  <Row>
+                </CardHeader>*/}
+                <CardBody className="pt-4 pt-md-4 ">
+                  {/* <Row>
                     <div className="col">
                       <div className="card-profile-stats d-flex justify-content-center mt-md-5">
                         <div>
@@ -96,23 +105,17 @@ class Profile extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </Row>
+                  </Row> */}
                   <div className="text-center">
                     <h3>
                       Jessica Jones
-                      <span className="font-weight-light">, 27</span>
                     </h3>
                     <div className="h5 font-weight-300">
-                      <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      {/*<i className="ni location_pin mr-2" />*/}
+                      24 RUE NGAMOUELI MASSINA
                     </div>
-                    <div className="h5 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                    {/*<div className="h5 mt-4">
+                      24 RUE NGAMOUELI MASSINA  
                     </div>
                     <hr className="my-4" />
                     <p>
@@ -122,12 +125,76 @@ class Profile extends React.Component {
                     </p>
                     <a href="#pablo" onClick={e => e.preventDefault()}>
                       Show more
-                    </a>
+                    </a>*/}
                   </div>
                 </CardBody>
               </Card>
             </Col>
-            <Col className="order-xl-1" xl="8">
+            <Col>
+                <ListGroup>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Ancien Index{" "}
+                        <Badge color="primary" pill>
+                            13976
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Nouvelle Index{" "}
+                        <Badge color="primary" pill>
+                            13976
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Numéro Client{" "}
+                        <Badge color="primary" pill>
+                            0000085A
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Numéro Branchement{" "}
+                        <Badge color="primary" pill>
+                            30050220050
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Numéro Police{" "}
+                        <Badge color="primary" pill>
+                            0753866U
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Puissance Souscrite{" "}
+                        <Badge color="primary" pill>
+                            3
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Catégorie Client{" "}
+                        <Badge color="primary" pill>
+                            1
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Nature Consommation{" "}
+                        <Badge color="primary" pill>
+                            1
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Code Régime Facturation{" "}
+                        <Badge color="primary" pill>
+                            1
+                        </Badge>
+                    </ListGroupItem>
+                    <ListGroupItem className="d-flex justify-content-between align-items-center">
+                        Nbre Redevance Audio{" "}
+                        <Badge color="primary" pill>
+                            0000085A
+                        </Badge>
+                    </ListGroupItem>
+                </ListGroup>
+            </Col>
+            {/*<Col className="order-xl-1" xl="8">
               <Card className="bg-secondary shadow">
                 <CardHeader className="bg-white border-0">
                   <Row className="align-items-center">
@@ -224,9 +291,9 @@ class Profile extends React.Component {
                         </Col>
                       </Row>
                     </div>
-                    <hr className="my-4" />
+                <hr className="my-4" />*/}
                     {/* Address */}
-                    <h6 className="heading-small text-muted mb-4">
+                    {/*<h6 className="heading-small text-muted mb-4">
                       Contact information
                     </h6>
                     <div className="pl-lg-4">
@@ -302,9 +369,9 @@ class Profile extends React.Component {
                         </Col>
                       </Row>
                     </div>
-                    <hr className="my-4" />
+                    <hr className="my-4" />*/}
                     {/* Description */}
-                    <h6 className="heading-small text-muted mb-4">About me</h6>
+                    {/*<h6 className="heading-small text-muted mb-4">About me</h6>
                     <div className="pl-lg-4">
                       <FormGroup>
                         <label>About Me</label>
@@ -321,7 +388,7 @@ class Profile extends React.Component {
                   </Form>
                 </CardBody>
               </Card>
-            </Col>
+            </Col>*/}
           </Row>
         </Container>
       </>

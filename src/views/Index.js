@@ -35,7 +35,8 @@ import {
   Table,
   Container,
   Row,
-  Col
+  Col,
+  Badge
 } from "reactstrap";
 
 // core components
@@ -47,6 +48,7 @@ import {
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
+import UserHeader from "components/Headers/UserHeader.js";
 
 class Index extends React.Component {
   constructor(props){
@@ -70,6 +72,64 @@ class Index extends React.Component {
   render() {
     return (
       <>
+        <UserHeader />
+        <Container className="mt--7" fluid>
+        <Row>
+        <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
+            <Card className="card-profile shadow">
+                <CardHeader className="text-center border-0 pb-0 pb-md-4">
+                  <div className="d-flex justify-content-between">
+                    <Badge color="primary"
+                    >
+                      13976
+                    </Badge>
+                    <Badge color="primary"
+                    >
+                      13976
+                    </Badge>
+                  </div>
+                </CardHeader>
+                <CardBody className="pt-0 pt-md-4">
+                    <Row>
+                        <div className="col">
+                            <div className="card-profile-stats d-flex justify-content-center mt-md-5">
+                                <div>
+                                    <span className="heading text-sm">0000085A</span>
+                                    <span className="description">Numéro client</span>
+                                </div>
+                            <div>
+                            <span className="heading text-sm">30050220050</span>
+                            <span className="description">Numéro branchement</span>
+                        </div>
+                        <div>
+                            <span className="heading text-sm">0753866U</span>
+                            <span className="description">Numéro police</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Row>
+                  <div className="text-center">
+                    <h3>
+                      Jessica Jones
+                    </h3>
+                    <div className="h5 font-weight-300">
+                      <i className="ni location_pin mr-2" />
+                      24 RUE NGAMOUELI MASSINA      
+                    </div>
+                    <div className="h5 mt-4">
+                      <i className="ni business_briefcase-24 mr-2" />
+                      Solution Manager - Creative Tim Officer
+                    </div>
+                    <div>
+                      <i className="ni education_hat mr-2" />
+                      University of Computer Science
+                    </div>
+                  </div>
+                </CardBody>
+            </Card>
+        </Col>
+        </Row>
+        </Container>
         <Header />
         {/* Page content */}
         <Container className="mt--7" fluid>
