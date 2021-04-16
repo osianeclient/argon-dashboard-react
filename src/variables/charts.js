@@ -257,7 +257,7 @@ function chartOptions() {
       borderDashOffset: [2],
       color: mode === "dark" ? colors.gray[900] : colors.gray[300],
       drawBorder: false,
-      drawTicks: false,
+      drawTicks: true,
       lineWidth: 0,
       zeroLineWidth: 0,
       zeroLineColor: mode === "dark" ? colors.gray[900] : colors.gray[300],
@@ -395,11 +395,11 @@ let chartExample2 = {
     }
   },
   data: {
-    labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    labels: ["Mar-avr", "Mai-Jun", "Jui-Aou", "Sep-Oct", "Nov-Dec", "Jan-Fev"],
     datasets: [
       {
-        label: "Sales",
-        data: [25, 20, 30, 22, 17, 29],
+        label: "Montant",
+        data: [225817, 217908, 130427, 105676, 459980, 183194],
         maxBarThickness: 10
       }
     ]

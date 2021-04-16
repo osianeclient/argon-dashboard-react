@@ -35,8 +35,7 @@ import {
   Table,
   Container,
   Row,
-  Col,
-  Badge
+  Col
 } from "reactstrap";
 
 // core components
@@ -48,7 +47,6 @@ import {
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
-import UserHeader from "components/Headers/UserHeader.js";
 
 class Index extends React.Component {
   constructor(props){
@@ -72,69 +70,11 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <UserHeader />
-        <Container className="mt--7" fluid>
-        <Row>
-        <Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-            <Card className="card-profile shadow">
-                <CardHeader className="text-center border-0 pb-0 pb-md-4">
-                  <div className="d-flex justify-content-between">
-                    <Badge color="primary"
-                    >
-                      13976
-                    </Badge>
-                    <Badge color="primary"
-                    >
-                      13976
-                    </Badge>
-                  </div>
-                </CardHeader>
-                <CardBody className="pt-0 pt-md-4">
-                    <Row>
-                        <div className="col">
-                            <div className="card-profile-stats d-flex justify-content-center mt-md-5">
-                                <div>
-                                    <span className="heading text-sm">0000085A</span>
-                                    <span className="description">Numéro client</span>
-                                </div>
-                            <div>
-                            <span className="heading text-sm">30050220050</span>
-                            <span className="description">Numéro branchement</span>
-                        </div>
-                        <div>
-                            <span className="heading text-sm">0753866U</span>
-                            <span className="description">Numéro police</span>
-                        </div>
-                      </div>
-                    </div>
-                  </Row>
-                  <div className="text-center">
-                    <h3>
-                      Jessica Jones
-                    </h3>
-                    <div className="h5 font-weight-300">
-                      <i className="ni location_pin mr-2" />
-                      24 RUE NGAMOUELI MASSINA      
-                    </div>
-                    <div className="h5 mt-4">
-                      <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      University of Computer Science
-                    </div>
-                  </div>
-                </CardBody>
-            </Card>
-        </Col>
-        </Row>
-        </Container>
         <Header />
         {/* Page content */}
         <Container className="mt--7" fluid>
           <Row>
-            <Col className="mb-5 mb-xl-0" xl="8">
+            {/*<Col className="mb-5 mb-xl-0" xl="8">
               <Card className="bg-gradient-default shadow">
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">
@@ -176,7 +116,7 @@ class Index extends React.Component {
                   </Row>
                 </CardHeader>
                 <CardBody>
-                  {/* Chart */}
+                  {/* Chart */}{/*
                   <div className="chart">
                     <Line
                       data={chartExample1[this.state.chartExample1Data]}
@@ -186,16 +126,16 @@ class Index extends React.Component {
                   </div>
                 </CardBody>
               </Card>
-            </Col>
+            </Col>*/}
             <Col xl="4">
-              <Card className="shadow">
+              <Card className="bg-gradient-default shadow">
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h6 className="text-uppercase text-muted ls-1 mb-1">
-                        Performance
-                      </h6>
-                      <h2 className="mb-0">Total orders</h2>
+                      <h3 className="text-uppercase text-muted ls-1 mb-1">
+                        Récapitulatif des factures
+                      </h3>
+                      {/*<h2 className="mb-0 text-muted">Total orders</h2>*/}
                     </div>
                   </Row>
                 </CardHeader>
@@ -211,7 +151,7 @@ class Index extends React.Component {
               </Card>
             </Col>
           </Row>
-          <Row className="mt-5">
+          {/*<Row className="mt-5">
             <Col className="mb-5 mb-xl-0" xl="8">
               <Card className="shadow">
                 <CardHeader className="border-0">
@@ -398,7 +338,7 @@ class Index extends React.Component {
                 </Table>
               </Card>
             </Col>
-          </Row>
+          </Row>*/}
         </Container>
       </>
     );

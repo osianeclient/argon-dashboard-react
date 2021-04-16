@@ -130,6 +130,8 @@ class Profile extends React.Component {
                 </CardBody>
               </Card>
             </Col>
+         </Row>
+         <Row>
             <Col>
                 <ListGroup>
                     <ListGroupItem className="d-flex justify-content-between align-items-center">

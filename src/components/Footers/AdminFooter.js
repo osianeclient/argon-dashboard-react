@@ -44,41 +44,21 @@ class Footer extends React.Component {
             <Nav className="nav-footer justify-content-center justify-content-xl-end">
               <NavItem>
                 <NavLink
-                  href="https://www.creative-tim.com?ref=adr-admin-footer"
+                  href="https://www.facebook.com/E2CSA/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Creative Tim
+                  facebook
                 </NavLink>
               </NavItem>
 
               <NavItem>
                 <NavLink
-                  href="https://www.creative-tim.com/presentation?ref=adr-admin-footer"
+                  href="https://e2c.cg/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  About Us
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink
-                  href="http://blog.creative-tim.com?ref=adr-admin-footer"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Blog
-                </NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink
-                  href="https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md?ref=adr-admin-footer"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  MIT License
+                  e2c.cg
                 </NavLink>
               </NavItem>
             </Nav>
