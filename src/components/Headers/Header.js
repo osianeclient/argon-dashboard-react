@@ -18,7 +18,7 @@
 import React from "react";
 
 // reactstrap components
-import { Card, CardBody, CardTitle, Container, Row, Col, Button, UncontrolledTooltip } from "reactstrap";
+import { Card, CardBody, CardTitle, Container, Row, Col, Button } from "reactstrap";
 
 class Header extends React.Component {
   render() {
@@ -41,31 +41,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20200470000007
+                            N°: 20200470000007
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             225817 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <Button className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
                           </Button>
-                          <UncontrolledTooltip
-                            delay={0}
-                            placement="top"
-                            target="tooltip611234743"
-                            >
-                            Tooltip on top
-                          </UncontrolledTooltip>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Jan-Fev 2021</span>
+                      </p>
                     </CardBody>
                   </Card>
                   <Card className="card-stats mb-4 mb-xl-0">
@@ -76,24 +69,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20200602037638
+                            N°: 20200602037638
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             217908 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <div className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
-                          </div>
+                          </Button>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Nov-Dec 2020</span>
+                        </p>
                     </CardBody>
                   </Card>
                   <Card className="card-stats mb-4 mb-xl-0">
@@ -104,24 +97,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20200802052044
+                            N°: 20200802052044
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             130427 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <div className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
-                          </div>
+                          </Button>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Sep-Oct 2020</span>
+                        </p>
                     </CardBody>
                   </Card>
                   <Card className="card-stats mb-4 mb-xl-0">
@@ -132,24 +125,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20201002002733
+                            N°: 20201002002733
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             105676 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <div className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
-                          </div>
+                          </Button>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Jui-Aou 2020</span>
+                        </p>
                     </CardBody>
                   </Card>
                   <Card className="card-stats mb-4 mb-xl-0">
@@ -160,24 +153,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20201270000114
+                            N°: 20201270000114
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             459980 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <div className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
-                          </div>
+                          </Button>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Mai-Jun 2020</span>
+                        </p>
                     </CardBody>
                   </Card>
                   <Card className="card-stats mb-4 mb-xl-0">
@@ -188,24 +181,24 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            20210201009833
+                            N°: 20210201009833
                           </CardTitle>
                           <span className="h2 font-weight-bold mb-0">
                             183194 Fcfa
                           </span>
                         </div>
                         <Col className="col-auto">
-                          <div className="icon icon-shape bg-success text-white rounded-circle shadow">
+                          <Button className="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
-                          </div>
+                          </Button>
                         </Col>
                       </Row>
-                      {/*<p className="mt-3 mb-0 text-muted text-sm">
-                        <span className="text-success mr-2">
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
-                        </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
-                        </p>*/}
+                        </span>{" "}*/}
+                        <span className="text-nowrap">Mar-Avr</span>
+                        </p>
                     </CardBody>
                   </Card>
                 </Col>
