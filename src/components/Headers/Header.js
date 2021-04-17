@@ -51,6 +51,13 @@ class Header extends React.Component {
                           <Button className="icon icon-shape bg-success text-white rounded-circle shadow">
                             <i className="fas fa-file-download" />
                           </Button>
+                          <UncontrolledTooltip
+                            delay={0}
+                            placement="top"
+                            target="tooltip611234743"
+                            >
+                            Tooltip on top
+                          </UncontrolledTooltip>
                         </Col>
                       </Row>
                       {/*<p className="mt-3 mb-0 text-muted text-sm">
