@@ -29,6 +29,11 @@ class Header extends React.Component {
             <div className="header-body">
               {/* Card stats */}
               <Row>
+                    <Col lg="6" xl="4">
+                        <Button block type="button" color="default" className="mb-4">Payer</Button>
+                    </Col>
+              </Row>
+              <Row>
                   <Col><h3>Dernières six Factures</h3></Col>
               </Row>
               <Row>
