@@ -19,8 +19,22 @@ import React from "react";
 
 // reactstrap components
 import { Card, CardBody, CardTitle, Container, Row, Col, Button } from "reactstrap";
+import { useHistory } from "react-router-dom";
+
+
+function injectHistory(Component) {
+  const InjectedHistory = function (props) {
+    const history = useHistory();
+    return <Component {...props} history={history} />;
+  };
+  return InjectedHistory;
+}
+
 
 class Header extends React.Component {
+  handleClick(path) {
+    this.props.history.push(path);
+  }
   render() {
     return (
       <>
@@ -30,7 +44,7 @@ class Header extends React.Component {
               {/* Card stats */}
               <Row>
                     <Col lg="6" xl="4">
-                        <Button block type="button" color="default" className="mb-4">Payer</Button>
+                        <Button block type="button" color="default" className="mb-4" onClick={() => this.handleClick("pay")}>Payer</Button>
                     </Col>
               </Row>
               <Row>
@@ -216,4 +230,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default injectHistory(Header);
