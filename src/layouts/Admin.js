@@ -26,6 +26,8 @@ import Sidebar from "components/Sidebar/Sidebar.js";
 
 import routes from "routes.js";
 
+import Logo from "../assets/img/brand/logo.png";
+
 class Admin extends React.Component {
   componentDidUpdate(e) {
     document.documentElement.scrollTop = 0;
@@ -67,8 +69,8 @@ class Admin extends React.Component {
           routes={routes}
           logo={{
             innerLink: "/admin/index",
-            imgSrc: require("assets/img/brand/argon-react.png"),
-            imgAlt: "..."
+            imgSrc: Logo,
+            imgAlt: "e2c"
           }}
         />
         <div className="main-content" ref="mainContent">
