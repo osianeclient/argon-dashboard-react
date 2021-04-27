@@ -127,7 +127,7 @@ class Index extends React.Component {
                 </CardBody>
               </Card>
             </Col>*/}
-            <Col xl="4">
+            <Col xl="12">
               <Card className="bg-gradient-default shadow">
                 <CardHeader className="bg-transparent">
                   <Row className="align-items-center">

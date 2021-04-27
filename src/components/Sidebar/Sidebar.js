@@ -152,7 +152,7 @@ class Sidebar extends React.Component {
                 <DropdownItem>Something else here</DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>*/}
-            <UncontrolledDropdown nav>
+            {/*<UncontrolledDropdown nav>
               <DropdownToggle nav>
                 <Media className="align-items-center">
                   <span className="avatar avatar-sm rounded-circle">
@@ -183,13 +183,13 @@ class Sidebar extends React.Component {
                   <i className="ni ni-support-16" />
                   <span>Support</span>
                 </DropdownItem>
-          <DropdownItem divider />*/}
+          <DropdownItem divider />
                 <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
                 </DropdownItem>
               </DropdownMenu>
-            </UncontrolledDropdown>
+            </UncontrolledDropdown>*/}
           </Nav>
           {/* Collapse */}
           <Collapse navbar isOpen={this.state.collapseOpen}>
@@ -242,36 +242,36 @@ class Sidebar extends React.Component {
             {/* Divider */}
             {<hr className="my-3" />}
             {/* Heading */}
-            <h6 className="navbar-heading text-muted">Documentation</h6>
+            {/*<h6 className="navbar-heading text-muted">Documentation</h6>*/}
             {/* Navigation */}
             <Nav className="mb-md-3" navbar>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/overview?ref=adr-admin-sidebar">
-                  <i className="ni ni-spaceship" />
-                  Getting started
+                <NavLink href="#">
+                  <i className="fas fa-book-open" />
+                  Livret commercial
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/colors?ref=adr-admin-sidebar">
-                  <i className="ni ni-palette" />
-                  Foundation
+                <NavLink href="tel:4242">
+                  <i className="fas fa-phone-volume" />
+                  Appellez le 4242
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/*<NavItem>
                 <NavLink href="https://demos.creative-tim.com/argon-dashboard-react/#/documentation/alerts?ref=adr-admin-sidebar">
                   <i className="ni ni-ui-04" />
                   Components
                 </NavLink>
-              </NavItem>
+              </NavItem>*/}
             </Nav>
-            <Nav className="mb-md-3" navbar>
+            {/*<Nav className="mb-md-3" navbar>
               <NavItem className="active-pro active">
                 <NavLink href="https://www.creative-tim.com/product/argon-dashboard-pro-react?ref=adr-admin-sidebar">
                   <i className="ni ni-spaceship" />
                   Upgrade to PRO
                 </NavLink>
               </NavItem>
-            </Nav>
+          </Nav>*/}
           </Collapse>
         </Container>
       </Navbar>

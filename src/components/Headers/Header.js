@@ -42,8 +42,8 @@ class Header extends React.Component {
           <Container fluid>
             <div className="header-body">
               {/* Card stats */}
-              <Row>
-                    <Col lg="6" xl="4">
+              <Row className="justify-content-md-center">
+                    <Col lg="6" xl="6">
                         <Button block type="button" color="default" className="mb-4" onClick={() => this.handleClick("pay")}>Payer</Button>
                     </Col>
               </Row>
@@ -51,8 +51,8 @@ class Header extends React.Component {
                   <Col><h3>Dernières six Factures</h3></Col>
               </Row>
               <Row>
-                <Col lg="6" xl="4">
-                  <Card className="card-stats mb-4 mb-xl-0">
+                <Col lg="6" xl="6">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -80,7 +80,7 @@ class Header extends React.Component {
                       </p>
                     </CardBody>
                   </Card>
-                  <Card className="card-stats mb-4 mb-xl-0">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -108,7 +108,7 @@ class Header extends React.Component {
                         </p>
                     </CardBody>
                   </Card>
-                  <Card className="card-stats mb-4 mb-xl-0">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -136,7 +136,9 @@ class Header extends React.Component {
                         </p>
                     </CardBody>
                   </Card>
-                  <Card className="card-stats mb-4 mb-xl-0">
+                </Col>
+                <Col lg="6" xl="6">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -164,7 +166,7 @@ class Header extends React.Component {
                         </p>
                     </CardBody>
                   </Card>
-                  <Card className="card-stats mb-4 mb-xl-0">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -192,7 +194,7 @@ class Header extends React.Component {
                         </p>
                     </CardBody>
                   </Card>
-                  <Card className="card-stats mb-4 mb-xl-0">
+                  <Card className="card-stats mb-4 mb-xl-4">
                     <CardBody>
                       <Row>
                         <div className="col">
@@ -216,7 +218,7 @@ class Header extends React.Component {
                         {/*<span className="text-success mr-2">
                           <i className="fa fa-arrow-up" /> 3.48%
                         </span>{" "}*/}
-                        <span className="text-nowrap">Mar-Avr</span>
+                        <span className="text-nowrap">Mar-Avr 2020</span>
                         </p>
                     </CardBody>
                   </Card>
