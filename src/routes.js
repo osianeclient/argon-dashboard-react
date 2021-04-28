@@ -61,8 +61,8 @@ var routes = [
     layout: "/admin"
   },*/
   {
-    path: "/login",
-    name: "Login",
+    path: "/se-connecter",
+    name: "Mon Branchement",
     icon: "ni ni-key-25 text-info",
     component: Login,
     layout: "/auth"

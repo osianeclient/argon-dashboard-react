@@ -1,0 +1,5 @@
+[
+    {"NumClient":"0150051Y","NumBranchement":"80076122250","NumPolice":"0051441P","NomClient":"OMS","PuissanceSouscrite":"3","CategorieClient":"9","Adresse Client":"BP6","AdresseBranchement":"LGT CITE OMS APPT G31 DJOUE","NatureConsommation":"1","NumCompteur":"0","AncienIndex":"0","NouvelIndex":"0","CodeRegimeFacturation":"6","NbreRedevanceAudio":"0"},
+    {"NumClient":"0150051Y","NumBranchement":"80076123000","NumPolice":"0012693W","NomClient":"OMS","PuissanceSouscrite":"15","CategorieClient":"9","Adresse Client":"BP6","AdresseBranchement":"LGT CITE OMS APPT K 32 DJOUE","NatureConsommation":"1","NumCompteur":"0","AncienIndex":"31187","NouvelIndex":"31187","CodeRegimeFacturation":"6","NbreRedevanceAudio":"0"},
+    {"NumClient":"0150051Y","NumBranchement":"80076123050","NumPolice":"0007914C","NomClient":"OMS","PuissanceSouscrite":"6","CategorieClient":"9","Adresse Client":"BP6","AdresseBranchement":"LGT CITE OMS APPT N11 DJOUE","NatureConsommation":"1","NumCompteur":"0","AncienIndex":"0","NouvelIndex":"0","CodeRegimeFacturation":"6","NbreRedevanceAudio":"0"}   
+]

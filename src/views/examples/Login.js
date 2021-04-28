@@ -33,8 +33,7 @@ import {
   Col
 } from "reactstrap";
 
-class Login extends React.Component {
-  render() {
+function Login (props) {
     return (
       <>
         <Col lg="5" md="7">
@@ -43,112 +42,52 @@ class Login extends React.Component {
               <div className="text-muted text-center mt-2 mb-3">
                 Se connecter
               </div>
-              {/*<div className="btn-wrapper text-center">
-                <Button
-                  className="btn-neutral btn-icon"
-                  color="default"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <span className="btn-inner--icon">
-                    <img
-                      alt="..."
-                      src={require("assets/img/icons/common/github.svg")}
-                    />
-                  </span>
-                  <span className="btn-inner--text">Github</span>
-                </Button>
-                <Button
-                  className="btn-neutral btn-icon"
-                  color="default"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <span className="btn-inner--icon">
-                    <img
-                      alt="..."
-                      src={require("assets/img/icons/common/google.svg")}
-                    />
-                  </span>
-                  <span className="btn-inner--text">Google</span>
-                </Button>
-              </div>*/}
             </CardHeader>
             <CardBody className="px-lg-5 py-lg-5">
-              {/*<div className="text-center text-muted mb-4">
-                <small>Or sign in with credentials</small>
-              </div>*/}
               <Form role="form">
                 <FormGroup className="mb-3">
                   <InputGroup className="input-group-alternative">
-                    {/*<InputGroupAddon addonType="prepend">
+                    <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="ni ni-email-83" />
+                        <i className="fas fa-phone-square-alt" />
                       </InputGroupText>
-                    </InputGroupAddon>*/}
-                    <Input placeholder="Insérer votre numéro client*" type="number" autoComplete="new-police"/>
+                    </InputGroupAddon>
+                    <Input placeholder="Votre numéro de téléphone*" type="tel" autoComplete="phone"/>
                   </InputGroup>
                 </FormGroup>
-                {/*<FormGroup>
+                <FormGroup>
                   <InputGroup className="input-group-alternative">
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
-                        <i className="ni ni-lock-circle-open" />
+                        <i className="fas fa-file-contract" />
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Password" type="password" autoComplete="new-password"/>
+                    <Input placeholder="Numéro de police**" type="number" autoComplete="police"/>
                   </InputGroup>
                 </FormGroup>
-                <div className="custom-control custom-control-alternative custom-checkbox">
-                  <input
-                    className="custom-control-input"
-                    id=" customCheckLogin"
-                    type="checkbox"
-                  />
-                  <label
-                    className="custom-control-label"
-                    htmlFor=" customCheckLogin"
-                  >
-                    <span className="text-muted">Remember me</span>
-                  </label>
-                </div>*/}
                 <div className="text-center">
                   <Button className="my-4" color="default" type="button">
                     Conitnuer
                   </Button>
                 </div>
+                
                 <div className="text-center">
                     <p className="text-muted" style={{fontSize: "12px"}}>
-                        *Votre numéro client se trouve en haut à gauche de votre facture
+                        *Vous recevrez un code unique pour terminer votre authentification
+                    </p>
+                </div>
+
+                <div className="text-center">
+                    <p className="text-muted" style={{fontSize: "12px"}}>
+                        **retrouvez votre numéro police en haut à droite de vos factures
                     </p>
                 </div>
               </Form>
             </CardBody>
           </Card>
-          {/*<Row className="mt-3">
-            <Col xs="6">
-              <a
-                className="text-light"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <small>Forgot password?</small>
-              </a>
-            </Col>
-            <Col className="text-right" xs="6">
-              <a
-                className="text-light"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <small>Create new account</small>
-              </a>
-            </Col>
-          </Row>*/}
         </Col>
       </>
     );
-  }
 }
 
 export default Login;
